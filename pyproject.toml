@@ -1,0 +1,13 @@
+[project]
+name = "hermes-smart-model-routing"
+version = "0.1.0"
+description = "Tiered per-turn model routing for Hermes Agent."
+readme = "README.md"
+requires-python = ">=3.10,<4"
+license = { text = "MIT" }
+authors = [
+  { name = "Waylish" }
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

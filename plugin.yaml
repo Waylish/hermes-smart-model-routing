@@ -1,0 +1,7 @@
+name: smart-model-routing
+version: 0.1.0
+description: "Tiered per-turn model routing for Hermes Agent. Includes a preview tool; automatic switching requires the documented Hermes core integration."
+author: "Waylish and Codex"
+kind: standalone
+provides_tools:
+  - smart_model_route_preview

@@ -1,0 +1,47 @@
+smart_model_routing:
+  enabled: true
+  tiers:
+    cheap:
+      provider: deepseek
+      model: deepseek-v4-flash
+      api_key_env: DEEPSEEK_API_KEY
+      reasoning:
+        enabled: false
+    standard:
+      provider: kimi-coding
+      model: kimi-k2.6
+      api_key_env: KIMI_API_KEY
+      reasoning:
+        enabled: false
+    code:
+      provider: kimi-coding
+      model: kimi-for-coding
+      api_key_env: KIMI_API_KEY
+      reasoning:
+        enabled: true
+        effort: medium
+    reasoning:
+      provider: deepseek
+      model: deepseek-v4-pro
+      api_key_env: DEEPSEEK_API_KEY
+      reasoning:
+        enabled: true
+        effort: high
+    long_context:
+      provider: kimi-coding
+      model: kimi-k2-thinking-turbo
+      api_key_env: KIMI_API_KEY
+      reasoning:
+        enabled: true
+        effort: medium
+    media:
+      provider: minimax-cn
+      model: MiniMax-M3
+      api_key_env: MINIMAX_CN_API_KEY
+  max_simple_chars: 500
+  max_simple_words: 80
+  max_simple_lines: 6
+  max_standard_chars: 1800
+  max_standard_words: 280
+  max_standard_lines: 18
+  allow_media: false
